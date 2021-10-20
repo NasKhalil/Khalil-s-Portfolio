@@ -1,2 +1,53 @@
 /* stylesheet */
-h1 { color: blue; }
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+body {
+  background-color: #E5E5E5; 
+  max-width: 356px;
+}
+
+h1 {
+  width: 327px;
+  margin-top: 100px;
+  font-size: 50px;
+  font-weight: 1000;
+}
+
+nav {
+  position: fixed;
+  width: 356px;
+  top: 0;
+  left: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  }
+
+#nav-logo {
+  width: 76px;
+  height: 20px;
+}
+
+.nav-btn{
+  width: 40px;
+  height: 40px;
+}
+
+.headline {
+  width: 356px;
+  margin-top: 40px;
+  background-image: url(./Media/header-shapes\ mobile@2x.svg);
+  background-color: white;
+  background-size: cover;
+  padding: 20px 20px;
+}
+
+.social-media a {
+  padding: 0px 5px;
+  text-decoration: none;
+}
