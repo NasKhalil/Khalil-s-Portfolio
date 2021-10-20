@@ -45,9 +45,16 @@ nav {
   background-color: white;
   background-size: cover;
   padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px 0px 0px 90px;
 }
 
 .social-media a {
   padding: 0px 5px;
   text-decoration: none;
+}
+
+.social-media {
+  margin: 10px 0px 50px 0px;
 }
