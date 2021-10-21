@@ -120,7 +120,7 @@ nav {
   grid-template-rows: auto;
   gap: 15px 8px;
   grid-template-areas:
-      "client counter role counter1 year";
+    "client counter role counter1 year";
   justify-self: start;
   align-self: center;
   justify-items: center;
@@ -156,7 +156,7 @@ nav {
 
 .tag-1 {
   grid-area: tag-1;
-  }
+}
 
 .tag-2 { grid-area: tag-2; }
 
@@ -189,7 +189,6 @@ nav {
   line-height: 24px;
   letter-spacing: 0.03em;
 }
-
 
 /* work style section ends */
 
