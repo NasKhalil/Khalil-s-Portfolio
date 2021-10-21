@@ -11,6 +11,8 @@ body {
   max-width: 356px;
 }
 
+/* header style section start */
+
 h1 {
   width: 327px;
   margin-top: 100px;
@@ -46,7 +48,7 @@ nav {
   background-image: url(./Media/header-shapes\ mobile@2x.svg);
   background-color: white;
   background-size: cover;
-  padding: 20px 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -64,7 +66,175 @@ nav {
   padding: 0;
 }
 
-li {
+.social-media li {
   list-style: none;
   padding: 0 10px;
 }
+
+/* header style section ends */
+
+/* work style section start */
+.work {
+ width: 100%;
+ padding: 20px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 327px;
+  grid-template-rows: 220px 36px 50px 76px 24px 70px;
+  grid-auto-columns: 1fr;
+  gap: 30px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "snapshoot-portfolio"
+    "project-title"
+    "frame"
+    "description"
+    "tags"
+    "project-button";
+  background: white;
+  border-radius: 8px;
+  margin: 20px 0;
+  padding: 20px;
+  justify-content: end;
+  justify-items: start;
+}
+
+.snapshoot-portfolio {
+  grid-area: snapshoot-portfolio;
+  justify-self: center;
+}
+
+.project-title {
+  grid-area: project-title;
+  font-style: bolder;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.frame {
+  display: grid; 
+  grid-template-columns: auto; 
+  grid-template-rows: auto; 
+  gap: 15px 8px; 
+  grid-template-areas: 
+      "client counter role counter1 year"; 
+  justify-self: start; 
+  align-self: center; 
+  justify-items: center;
+  align-items: center;
+  grid-area: frame;  
+}
+
+.client { grid-area: client; }
+
+.counter { grid-area: counter; }
+
+.role { grid-area: role; }
+
+.counter1 { grid-area: counter1; }
+
+.year { grid-area: year; }
+
+.description { grid-area: description; }
+
+.tags {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "tag-1 tag-2 tag-3"
+    "tag-1 tag-2 tag-3"
+    "tag-1 tag-2 tag-3";
+  grid-area: tags;
+  align-items: center;
+}
+
+.tag-1 {
+  grid-area: tag-1;
+  }
+
+.tag-2 { grid-area: tag-2; }
+
+.tag-3 { grid-area: tag-3; }
+
+.tag-style {
+  background: #ebebff;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070FF;
+  padding: 10px;
+  text-align: center;
+}
+
+.project-button {
+  grid-area: project-button;
+  width: 150px;
+  height: 48px;
+  background: none;
+  color: #396df2;
+  border: solid #396df2 1px;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+
+/* work style section ends */
+
+/* about me style section start */
+
+.about-me {
+  background: white;
+  border-radius: 0 80px 0 0;
+  margin: 20px 0;
+  padding: 20px;
+  width: 356px;
+}
+
+.about-me li {
+  list-style: none;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.about-me ul {
+  padding: 0;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 303px;
+}
+
+.langguages-list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background: #f7f7f9;
+  width: 303px;
+  height: 67px;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+.langguages-list li {
+  padding: 0 5px;
+}
+
+.list-items {
+  margin-top: 15px;
+}
+/* about me style section ends */
