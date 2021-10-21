@@ -115,17 +115,17 @@ nav {
 }
 
 .frame {
-  display: grid; 
-  grid-template-columns: auto; 
-  grid-template-rows: auto; 
-  gap: 15px 8px; 
-  grid-template-areas: 
-      "client counter role counter1 year"; 
-  justify-self: start; 
-  align-self: center; 
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 15px 8px;
+  grid-template-areas:
+      "client counter role counter1 year";
+  justify-self: start;
+  align-self: center;
   justify-items: center;
   align-items: center;
-  grid-area: frame;  
+  grid-area: frame;
 }
 
 .client { grid-area: client; }
@@ -144,7 +144,7 @@ nav {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 10px;
+  gap: 0 10px;
   grid-auto-flow: row;
   grid-template-areas:
     "tag-1 tag-2 tag-3"
@@ -170,7 +170,7 @@ nav {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #6070FF;
+  color: #6070ff;
   padding: 10px;
   text-align: center;
 }
@@ -238,4 +238,5 @@ nav {
 .list-items {
   margin-top: 15px;
 }
+
 /* about me style section ends */
