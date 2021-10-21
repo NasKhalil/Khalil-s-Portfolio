@@ -75,9 +75,10 @@ nav {
 
 /* work style section start */
 .work {
- width: 100%;
- padding: 20px;
+  width: 100%;
+  padding: 20px;
 }
+
 .container {
   display: grid;
   grid-template-columns: 327px;
@@ -107,7 +108,7 @@ nav {
 
 .project-title {
   grid-area: project-title;
-  font-style: bolder;
+  font-style: normal;
   font-weight: 900;
   font-size: 32px;
   line-height: 44px;
