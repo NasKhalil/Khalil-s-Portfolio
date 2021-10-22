@@ -77,89 +77,65 @@ nav {
 .work {
   width: 100%;
   padding: 20px;
+  display: grid;
+  grid-template-columns: 327px;
+  grid-template-rows: repeat(4, 620px) ;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    "container"
+    "container"
+    "container"
+    "container"
+    "container";
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 327px;
-  grid-template-rows: 220px 36px 50px 76px 24px 70px;
-  grid-auto-columns: 1fr;
-  gap: 30px 20px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "snapshoot-portfolio"
-    "project-title"
-    "frame"
-    "description"
-    "tags"
-    "project-button";
+  display: flex;
+  flex-direction: column;
   background: white;
   border-radius: 8px;
   margin: 20px 0;
   padding: 20px;
-  justify-content: end;
-  justify-items: start;
+  grid-area: container;
 }
 
 .snapshoot-portfolio {
-  grid-area: snapshoot-portfolio;
   justify-self: center;
 }
 
 .project-title {
-  grid-area: project-title;
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
   line-height: 44px;
+  margin: 12px 0;
 }
 
 .frame {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  gap: 15px 8px;
-  grid-template-areas: "client counter role counter1 year";
-  justify-self: start;
-  align-self: center;
-  justify-items: center;
+  display: flex;
+  justify-content: start;
   align-items: center;
-  grid-area: frame;
 }
 
-.client { grid-area: client; }
+.frame h3 {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
 
-.counter { grid-area: counter; }
-
-.role { grid-area: role; }
-
-.counter1 { grid-area: counter1; }
-
-.year { grid-area: year; }
-
-.description { grid-area: description; }
+.counter {
+  margin: 0 10px;
+}
 
 .tags {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0 10px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "tag-1 tag-2 tag-3"
-    "tag-1 tag-2 tag-3"
-    "tag-1 tag-2 tag-3";
-  grid-area: tags;
-  align-items: center;
+  display: flex;
+  padding: 0;
+  margin: 12px 0;
 }
 
-.tag-1 {
-  grid-area: tag-1;
+.description {
+  margin: 10px 0;
 }
-
-.tag-2 { grid-area: tag-2; }
-
-.tag-3 { grid-area: tag-3; }
 
 .tag-style {
   background: #ebebff;
@@ -171,11 +147,12 @@ nav {
   letter-spacing: 0.03em;
   color: #6070ff;
   padding: 10px;
+  margin-right: 10px;
   text-align: center;
+  list-style: none;
 }
 
 .project-button {
-  grid-area: project-button;
   width: 150px;
   height: 48px;
   background: none;
@@ -187,8 +164,37 @@ nav {
   font-size: 15px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  margin: 18px 0;
 }
 
+
+.project-button:hover {
+  width: 150px;
+  height: 48px;
+  background: #6070ff;
+  color: #ffffff;
+  border: solid #396df2 1px;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.project-button:active {
+  width: 150px;
+  height: 48px;
+  background: #2230d2;
+  color: #ffffff;
+  border: solid #2230d2 1px;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
 /* work style section ends */
 
 /* about me style section start */
@@ -253,3 +259,7 @@ nav {
 }
 
 /* about me style section ends */
+
+
+
+/* 
