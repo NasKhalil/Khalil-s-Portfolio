@@ -11,6 +11,8 @@ body {
   max-width: 356px;
 }
 
+/* header style section start */
+
 h1 {
   width: 327px;
   margin-top: 100px;
@@ -46,7 +48,7 @@ nav {
   background-image: url(./Media/header-shapes\ mobile@2x.svg);
   background-color: white;
   background-size: cover;
-  padding: 20px 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -64,7 +66,195 @@ nav {
   padding: 0;
 }
 
-li {
+.social-media li {
   list-style: none;
   padding: 0 10px;
 }
+
+/* header style section ends */
+
+/* work style section start */
+.work {
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 327px;
+  grid-template-rows: repeat(4, 620px);
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    "container"
+    "container"
+    "container"
+    "container"
+    "container";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 8px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.snapshoot-portfolio {
+  justify-self: center;
+}
+
+.project-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 12px 0;
+}
+
+.frame {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.frame h3 {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.counter {
+  margin: 0 10px;
+}
+
+.tags {
+  display: flex;
+  padding: 0;
+  margin: 12px 0;
+}
+
+.description {
+  margin: 10px 0;
+}
+
+.tag-style {
+  background: #ebebff;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  padding: 10px;
+  margin-right: 10px;
+  text-align: center;
+  list-style: none;
+}
+
+.project-button {
+  width: 150px;
+  height: 48px;
+  background: none;
+  color: #396df2;
+  border: solid #396df2 1px;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin: 18px 0;
+}
+
+.project-button:hover {
+  width: 150px;
+  height: 48px;
+  background: #6070ff;
+  color: #fff;
+  border: solid #396df2 1px;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.project-button:active {
+  width: 150px;
+  height: 48px;
+  background: #2230d2;
+  color: #fff;
+  border: solid #2230d2 1px;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+/* work style section ends */
+
+/* about me style section start */
+
+.social-connect {
+  text-decoration: none;
+  color: #7f8cff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about-me {
+  background: white;
+  border-radius: 0 80px 0 0;
+  margin: 20px 0;
+  padding: 20px;
+  width: 356px;
+}
+
+.aboutme-title {
+  font-weight: 900;
+  font-size: 65px;
+  line-height: 62px;
+  margin: 75px 0 10px 0;
+}
+
+.about-me li {
+  list-style: none;
+  list-style-position: inside;
+}
+
+.about-me ul {
+  padding: 0;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 303px;
+}
+
+.langguages-list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background: #f7f7f9;
+  width: 303px;
+  height: 67px;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+.langguages-list li {
+  padding: 0 5px;
+}
+
+.list-items {
+  margin-top: 15px;
+}
+
+/* about me style section ends */
