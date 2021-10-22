@@ -193,6 +193,15 @@ nav {
 
 /* about me style section start */
 
+.social-connect {
+  text-decoration: none;
+  color: #7f8cff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .about-me {
   background: white;
   border-radius: 0 80px 0 0;
@@ -201,9 +210,15 @@ nav {
   width: 356px;
 }
 
+.aboutme-title {
+  font-weight: 900;
+  font-size: 65px;
+  line-height: 62px;
+  margin: 75px 0 10px 0;
+}
+
 .about-me li {
   list-style: none;
-  padding: 0;
   list-style-position: inside;
 }
 
