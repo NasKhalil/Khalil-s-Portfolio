@@ -79,7 +79,7 @@ nav {
   padding: 20px;
   display: grid;
   grid-template-columns: 327px;
-  grid-template-rows: repeat(4, 620px) ;
+  grid-template-rows: repeat(4, 620px);
   grid-auto-columns: 1fr;
   grid-template-areas:
     "container"
@@ -96,7 +96,6 @@ nav {
   border-radius: 8px;
   margin: 20px 0;
   padding: 20px;
-  grid-area: container;
 }
 
 .snapshoot-portfolio {
@@ -167,12 +166,11 @@ nav {
   margin: 18px 0;
 }
 
-
 .project-button:hover {
   width: 150px;
   height: 48px;
   background: #6070ff;
-  color: #ffffff;
+  color: #fff;
   border: solid #396df2 1px;
   border-radius: 8px;
   padding: 12px;
@@ -186,7 +184,7 @@ nav {
   width: 150px;
   height: 48px;
   background: #2230d2;
-  color: #ffffff;
+  color: #fff;
   border: solid #2230d2 1px;
   border-radius: 8px;
   padding: 12px;
@@ -195,6 +193,7 @@ nav {
   line-height: 24px;
   letter-spacing: 0.03em;
 }
+
 /* work style section ends */
 
 /* about me style section start */
