@@ -127,7 +127,6 @@ nav {
 }
 
 .tags {
-  display: flex;
   padding: 0;
   margin: 12px 0;
 }
@@ -137,6 +136,7 @@ nav {
 }
 
 .tag-style {
+  float: left;
   background: #ebebff;
   border-radius: 8px;
   font-style: normal;
