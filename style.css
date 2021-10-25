@@ -154,7 +154,7 @@ nav {
 .project-button {
   width: 150px;
   height: 48px;
-  background: none;
+  background: #fff;
   color: #396df2;
   border: solid #396df2 1px;
   border-radius: 8px;
@@ -210,9 +210,9 @@ nav {
 .about-me {
   background: white;
   border-radius: 0 80px 0 0;
-  margin: 20px 0;
+  margin-top: 20px;
   padding: 20px;
-  width: 356px;
+  width: 375px;
 }
 
 .aboutme-title {
@@ -258,3 +258,87 @@ nav {
 }
 
 /* about me style section ends */
+
+/* contact form section starts */
+.contact-section div {
+  height: 779px;
+  min-width: 375px;
+  background-color: #6070ff;
+  background-image: url(./Media/contact-form-background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top 20px right 0;
+  border-radius: 80px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact-section {
+  background: #fff;
+}
+
+.contact-me-tittle {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.contact-section p {
+  color: #ebebff;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 12px;
+  padding: 30px;
+}
+
+#contact-form {
+  margin-bottom: 25px;
+}
+
+#contact-form li {
+  list-style: none;
+}
+
+label {
+  display: none;
+}
+
+#contact-form ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 327px;
+  height: 48px;
+  padding-left: 8px;
+  margin-top: 16px;
+}
+
+textarea {
+  width: 327px;
+  height: 170px;
+  border-radius: 8px;
+  padding-left: 8px;
+  padding-top: 8px;
+  margin-top: 16px;
+}
+
+#contact-form ul li:nth-child(4) {
+  align-self: flex-start;
+}
+
+/* contact form section starts */
