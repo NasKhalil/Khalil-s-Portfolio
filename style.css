@@ -387,7 +387,7 @@ textarea {
       "container"
       "container";
   }
-  
+
   .container {
     display: flex;
     flex-direction: column;
@@ -449,14 +449,14 @@ textarea {
     width: 303px;
     height: 67px;
     border-radius: 8px;
-    margin: 12px 0; 
+    margin: 12px 0;
   }
 
   .left-items p {
     width: 327px;
   }
 
-/* contact form section starts */
+  /* contact form section starts */
   .contact-section div {
     height: 779px;
     background-color: #6070ff;
@@ -519,6 +519,4 @@ textarea {
   #contact-form ul li:nth-child(4) {
     align-self: flex-start;
   }
-
 }
-  
