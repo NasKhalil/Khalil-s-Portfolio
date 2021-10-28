@@ -13,7 +13,7 @@ body {
 }
 
 .project-button {
-  width: 150px;
+  width: auto;
   height: 48px;
   background: #fff;
   color: #396df2;
@@ -28,7 +28,7 @@ body {
 }
 
 .project-button:hover {
-  width: 150px;
+  width: auto;
   height: 48px;
   background: #6070ff;
   color: #fff;
@@ -42,7 +42,7 @@ body {
 }
 
 .project-button:active {
-  width: 150px;
+  width: auto;
   height: 48px;
   background: #2230d2;
   color: #fff;
@@ -254,7 +254,7 @@ h1:nth-child(odd) {
   margin: 12px 0;
 }
 
-.left-items p {
+.about-me-description {
   width: 327px;
 }
 
@@ -443,6 +443,7 @@ label {
   .container-description {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     padding: 20px;
     width: 496px;
   }
@@ -546,7 +547,8 @@ label {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 303px;
+    width: 100%;
+    margin-right: 45px;
   }
 
   .langguages-list {
@@ -569,7 +571,8 @@ label {
   .list-items {
     width: 60%;
     margin-top: 75px;
-    padding-left: 55px;
+    padding-left: 35px;
+    padding-right: 142px;
   }
 
   .left-items {
@@ -579,6 +582,13 @@ label {
 
   .lg-list-horizontal {
     display: flex;
+  }
+
+  .about-me-description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 447px;
+    margin: 15px 0;
   }
 
   /* about me style section ends */
