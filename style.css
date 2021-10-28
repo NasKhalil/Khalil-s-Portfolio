@@ -25,6 +25,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   margin: 18px 0;
+  transition: background-color 1s;
 }
 
 .project-button:hover {
@@ -358,6 +359,13 @@ label {
   #nav-logo {
     width: 76px;
     height: 20px;
+    animation: rotateZ 2s;
+  }
+
+  @keyframes rotateZ {
+    to {
+      transform: rotateZ(360deg);
+    }
   }
 
   .nav-btn {
@@ -452,6 +460,12 @@ label {
     max-width: 100%;
     max-height: 100%;
     flex: 1;
+    transform: scale(1);
+  }
+
+  .snapshoot-img:hover {
+    max-width: 95%;
+    max-height: 95%;
   }
 
   .project-title {
@@ -623,13 +637,24 @@ label {
     margin-top: 70px;
   }
 
-  .contact-section p {
+  .form-instructions {
     color: #ebebff;
     font-size: 20px;
     line-height: 28px;
     text-align: center;
     margin-top: 12px;
     max-width: 447px;
+    transform: translate(0);
+  }
+
+  .form-instructions:hover {
+    color: #ebebff;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 12px;
+    max-width: 447px;
+    transform: translate(10px);
   }
 
   #contact-form {
