@@ -25,7 +25,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   margin: 18px 0;
-  transition: background-color 1s;
+  transition: background-color 0.4s;
 }
 
 .project-button:hover {
@@ -354,6 +354,7 @@ label {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 1;
   }
 
   #nav-logo {
@@ -363,6 +364,10 @@ label {
   }
 
   @keyframes rotateZ {
+    from {
+      transform: rotateZ(0deg);
+    }
+
     to {
       transform: rotateZ(360deg);
     }
