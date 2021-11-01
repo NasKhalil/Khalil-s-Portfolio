@@ -1,6 +1,9 @@
 # Khalil-s-Portfolio
 > This project is for my portfolio website
 
+## My Portfolio Link
+
+https://naskhalil.github.io/Khalil-s-Portfolio/
 
 ## Built With
 - HTML
