@@ -674,6 +674,7 @@ label {
     display: block;
     color: #fff;
     margin: 10px 0 -5px 0;
+    text-align: start;
   }
 
   #contact-form ul {
