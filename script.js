@@ -1,7 +1,15 @@
-let btn_close = document.querySelector(".nav-btn")
+const btnOpen = document.querySelector(".nav-btn");
+const btnClose = document.querySelector(".close-btn");
 
-btn_close.addEventListener('click',closeMenu)
+btnOpen.addEventListener("click", openMenu);
+btnClose.addEventListener("click", closeMenu);
 
-function closeMenu () {
-    alert('hello')    
+function openMenu() {
+  btnClose.style.display = "block";
+  btnOpen.style.display = "none";
+}
+
+function closeMenu() {
+  btnClose.style.display = "none";
+  btnOpen.style.display = "block";
 }

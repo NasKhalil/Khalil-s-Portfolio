@@ -1,10 +1,10 @@
 /* stylesheet */
 
 /* base code */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
 }
 
@@ -85,6 +85,10 @@ nav {
 .nav-btn {
   width: 40px;
   height: 40px;
+}
+
+.close-btn {
+  display: none;
 }
 
 .nav-items {
@@ -361,10 +365,6 @@ label {
     width: 76px;
     height: 20px;
     animation: rotateZ 2s;
-  }
-
-  .close-btn {
-    display: none;
   }
 
   @keyframes rotateZ {
