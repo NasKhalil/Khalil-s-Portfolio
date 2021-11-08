@@ -363,6 +363,10 @@ label {
     animation: rotateZ 2s;
   }
 
+  .close-btn {
+    display: none;
+  }
+
   @keyframes rotateZ {
     from {
       transform: rotateZ(0deg);
