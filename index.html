@@ -1,244 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Khalil's Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <!-- script google analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SBJ1QKCV43"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SBJ1QKCV43"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-SBJ1QKCV43');
+      gtag("config", "G-SBJ1QKCV43");
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="#intro"><img id="nav-logo" src="./Media/logo.png" alt="my logo"></a>
-            <img class="nav-btn" src="./Media/hamburger-button.png" alt="hamburger button">
-            <ul class="nav-items">
-                <li><a href="#my-project">Portfolio</a></li>
-                <li><a href="#about-myself">About</a></li>
-                <li><a href="#contact-me">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <a href="#intro"
+          ><img id="nav-logo" src="./Media/logo.png" alt="my logo"
+        /></a>
+        <img
+          class="nav-btn"
+          src="./Media/hamburger-button.png"
+          alt="hamburger button"
+        />
+
+        <ul class="nav-items">
+          <li>
+            <button type="button" class="close-btn">
+              <img src="./Media/close-button.png" alt="close button" />
+            </button>
+          </li>
+          <li><a class="menu-item" href="#my-project">Portfolio</a></li>
+          <li><a class="menu-item" href="#about-myself">About</a></li>
+          <li><a class="menu-item" href="#contact-me">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="headline" id="intro">
-            <h1>I'm Khalil <br> Glad to see you!</h1>
-            <p>I'm a software developer! I can help you build a product, feature or website look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
-            <a class="social-connect" href="#"><h4>LET’S CONNECT</h4></a>
-            <ul class="social-media">
-                <li>
-                    <a href="https://twitter.com/KhalilNasri92"> <img src="./Media/twitter-icon.svg" alt="twitter icon"></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/nasri-khalil-androdev/"><img src="./Media/Linkedin-icon.svg" alt="linkedin icon"></a>
-                </li>
-                <li>
-                    <a href="https://github.com/NasKhalil"><img src="./Media/github-icon.svg" alt="github icon"></a>
-                </li>
+      <section class="headline" id="intro">
+        <h1>
+          I'm Khalil <br />
+          Glad to see you!
+        </h1>
+        <p>
+          I'm a software developer! I can help you build a product, feature or
+          website look through some of my work and experience! If you like what
+          you see and have a project you need coded, don't hesitate to contact
+          me.
+        </p>
+        <a class="social-connect" href="#"><h4>LET’S CONNECT</h4></a>
+        <ul class="social-media">
+          <li>
+            <a href="https://twitter.com/KhalilNasri92">
+              <img src="./Media/twitter-icon.svg" alt="twitter icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/nasri-khalil-androdev/"
+              ><img src="./Media/Linkedin-icon.svg" alt="linkedin icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/NasKhalil"
+              ><img src="./Media/github-icon.svg" alt="github icon"
+            /></a>
+          </li>
+        </ul>
+      </section>
+      <section class="work" id="my-project">
+        <div class="container">
+          <img
+            class="snapshoot-img"
+            src="./Media/Snapshoot-Portfolio-1.png"
+            alt="Screenshot of the Tonic project"
+          />
+          <div class="container-description">
+            <h2 class="project-title">Tonic</h2>
+            <div class="frame">
+              <h3 class="client">CANOPY</h3>
+              <img
+                class="counter"
+                src="./Media/Counter.png"
+                alt="point image"
+              />
+              <h3 class="role">Back End Dev</h3>
+              <img
+                class="counter"
+                src="./Media/Counter.png"
+                alt="point image"
+              />
+              <h3 class="year">2015</h3>
+            </div>
+            <p class="description">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul class="tags">
+              <li class="tag-1 tag-style">html</li>
+              <li class="tag-2 tag-style">css</li>
+              <li class="tag-3 tag-style">javascript</li>
             </ul>
-        </section>
-        <section class="work" id="my-project">
-            <div class="container">
-                <img class="snapshoot-img" src="./Media/Snapshoot-Portfolio-1.png" alt="Screenshot of the Tonic project">
-                <div class="container-description">
-                    <h2 class="project-title">Tonic</h2>
-                    <div class="frame">
-                    <h3 class="client">CANOPY</h3>
-                    <img class="counter" src="./Media/Counter.png" alt="point image">
-                    <h3 class="role">Back End Dev</h3>
-                    <img class="counter" src="./Media/Counter.png" alt="point image">
-                    <h3 class="year">2015</h3>
-                    </div>
-                    <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-                    <ul class="tags">
-                        <li class="tag-1 tag-style">html</li>
-                        <li class="tag-2 tag-style">css</li>
-                        <li class="tag-3 tag-style">javascript</li>
-                    </ul>
-                    <button class="project-button">See Project</button>
-                </div>
+            <button type="button" class="project-button">See Project</button>
+          </div>
+        </div>
+        <div class="container-reverse">
+          <img
+            class="snapshoot-img"
+            src="./Media/Snapshoot-Portfolio-2.png"
+            alt="Screenshot of the Multi-Post Stories project"
+          />
+          <div class="container-description">
+            <h2 class="project-title">Multi-Post Stories</h2>
+            <div class="frame">
+              <h3 class="client">CANOPY</h3>
+              <img
+                class="counter"
+                src="./Media/Counter.png"
+                alt="point image"
+              />
+              <h3 class="role">Back End Dev</h3>
+              <img
+                class="counter"
+                src="./Media/Counter.png"
+                alt="point image"
+              />
+              <h3 class="year">2015</h3>
             </div>
-            <div class="container-reverse">
-                <img class="snapshoot-img" src="./Media/Snapshoot-Portfolio-2.png" alt="Screenshot of the Multi-Post Stories project">
-                <div class="container-description">    
-                    <h2 class="project-title">Multi-Post Stories</h2>
-                    <div class="frame">
-                    <h3 class="client">CANOPY</h3>
-                    <img class="counter" src="./Media/Counter.png" alt="point image">
-                    <h3 class="role">Back End Dev</h3>
-                    <img class="counter" src="./Media/Counter.png" alt="point image">
-                    <h3 class="year">2015</h3>
-                    </div>
-                    <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-                    <ul class="tags">
-                        <li class="tag-1 tag-style">html</li>
-                        <li class="tag-2 tag-style">css</li>
-                        <li class="tag-3 tag-style">javascript</li>
-                    </ul>
-                    <button class="project-button">See Project</button>
-                </div>
+            <p class="description">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul class="tags">
+              <li class="tag-1 tag-style">html</li>
+              <li class="tag-2 tag-style">css</li>
+              <li class="tag-3 tag-style">javascript</li>
+            </ul>
+            <button type="button" class="project-button">See Project</button>
+          </div>
+        </div>
+        <div class="container">
+          <img
+            class="snapshoot-img"
+            src="./Media/Snapshoot-Portfolio-3.png"
+            alt="Screenshot of the Tonic project"
+          />
+          <div class="container-description">
+            <h2 class="project-title">Tonic</h2>
+            <div class="frame">
+              <h3 class="client">CANOPY</h3>
+              <img
+                class="counter"
+                src="./Media/Counter.png"
+                alt="point image"
+              />
+              <h3 class="role">Back End Dev</h3>
+              <img
+                class="counter"
+                src="./Media/Counter.png"
+                alt="point image"
+              />
+              <h3 class="year">2015</h3>
             </div>
-            <div class="container">
-                <img class="snapshoot-img" src="./Media/Snapshoot-Portfolio-3.png" alt="Screenshot of the Tonic project">
-                <div class="container-description">
-                    <h2 class="project-title">Tonic</h2>
-                    <div class="frame">
-                    <h3 class="client">CANOPY</h3>
-                    <img class="counter" src="./Media/Counter.png" alt="point image">
-                    <h3 class="role">Back End Dev</h3>
-                    <img class="counter" src="./Media/Counter.png" alt="point image">
-                    <h3 class="year">2015</h3>
-                    </div>
-                    <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-                    <ul class="tags">
-                        <li class="tag-1 tag-style">html</li>
-                        <li class="tag-2 tag-style">css</li>
-                        <li class="tag-3 tag-style">javascript</li>
-                    </ul>
-                    <button class="project-button">See Project</button>
-                </div>
+            <p class="description">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul class="tags">
+              <li class="tag-1 tag-style">html</li>
+              <li class="tag-2 tag-style">css</li>
+              <li class="tag-3 tag-style">javascript</li>
+            </ul>
+            <button type="button" class="project-button">See Project</button>
+          </div>
+        </div>
+        <div class="container-reverse">
+          <img
+            class="snapshoot-img"
+            src="./Media/Snapshoot-Portfolio-4.png"
+            alt="Screenshot of the Multi-Post Stories project"
+          />
+          <div class="container-description">
+            <h2 class="project-title">Multi-Post Stories</h2>
+            <div class="frame">
+              <h3 class="client">CANOPY</h3>
+              <img
+                class="counter"
+                src="./Media/Counter.png"
+                alt="point image"
+              />
+              <h3 class="role">Back End Dev</h3>
+              <img
+                class="counter1"
+                src="./Media/Counter.png"
+                alt="point image"
+              />
+              <h3 class="year">2015</h3>
             </div>
-            <div class="container-reverse">
-                <img class="snapshoot-img" src="./Media/Snapshoot-Portfolio-4.png" alt="Screenshot of the Multi-Post Stories project" >
-                <div class="container-description">
-                    <h2 class="project-title">Multi-Post Stories</h2>
-                    <div class="frame">
-                    <h3 class="client">CANOPY</h3>
-                    <img class="counter" src="./Media/Counter.png" alt="point image">
-                    <h3 class="role">Back End Dev</h3>
-                    <img class="counter1" src="./Media/Counter.png" alt="point image">
-                    <h3 class="year">2015</h3>
-                    </div>
-                    <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-                    <ul class="tags">
-                        <li class="tag-1 tag-style">html</li>
-                        <li class="tag-2 tag-style">css</li>
-                        <li class="tag-3 tag-style">javascript</li>
-                    </ul>
-                    <button class="project-button" type="button">See Project</button>
-                </div>
-            </div>
-        </section>
-        <section class="about-me" id="about-myself">
-            <div class="left-items">
-                <h3 class="aboutme-title">About Myself</h3>
-                <p class="about-me-description">
-                    Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-                </p>
-                <a class="social-connect" href="#"><h4>LET’S CONNECT</h4></a>
-                <ul class="social-media">
-                    <li>
-                        <a href="https://twitter.com/KhalilNasri92"> <img src="./Media/twitter-icon.svg" alt="twitter icon"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/nasri-khalil-androdev/"><img src="./Media/Linkedin-icon.svg" alt="linkedin icon"></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/NasKhalil"><img src="./Media/github-icon.svg" alt="github icon"></a>
-                    </li>
-                </ul>
-                <button class="project-button" type="button">
-                    Get my resume
-                </button>
-            </div>
+            <p class="description">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul class="tags">
+              <li class="tag-1 tag-style">html</li>
+              <li class="tag-2 tag-style">css</li>
+              <li class="tag-3 tag-style">javascript</li>
+            </ul>
+            <button class="project-button" type="button">See Project</button>
+          </div>
+        </div>
+      </section>
+      <section class="about-me" id="about-myself">
+        <div class="left-items">
+          <h3 class="aboutme-title">About Myself</h3>
+          <p class="about-me-description">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hestiate to contact me.
+          </p>
+          <a class="social-connect" href="#"><h4>LET’S CONNECT</h4></a>
+          <ul class="social-media">
+            <li>
+              <a href="https://twitter.com/KhalilNasri92">
+                <img src="./Media/twitter-icon.svg" alt="twitter icon"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/nasri-khalil-androdev/"
+                ><img src="./Media/Linkedin-icon.svg" alt="linkedin icon"
+              /></a>
+            </li>
+            <li>
+              <a href="https://github.com/NasKhalil"
+                ><img src="./Media/github-icon.svg" alt="github icon"
+              /></a>
+            </li>
+          </ul>
+          <button class="project-button" type="button">Get my resume</button>
+        </div>
 
-            <div class="list-items">
-                <ul>
+        <div class="list-items">
+          <ul>
+            <li>
+              <ul class="skills">
+                <li><h4>Langguages</h4></li>
+                <li>
+                  <img
+                    src="./Media/Icon-down.png"
+                    alt="Dropped down menu to display Langguages list"
+                  />
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="lg-list-horizontal">
+                <li>
+                  <ul class="langguages-list">
                     <li>
-                        <ul class="skills">
-                            <li><h4>Langguages</h4></li>
-                            <li><img src="./Media/Icon-down.png" alt="Dropped down menu to display Langguages list"></li>
-                        </ul>   
+                      <img src="./Media/javascript.png" alt="Javascript logo" />
                     </li>
+                    <li>Javascript</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="langguages-list">
                     <li>
-                        <ul class="lg-list-horizontal">
-                            <li>
-                                <ul class="langguages-list">
-                                    <li>
-                                        <img src="./Media/javascript.png" alt="Javascript logo">
-                                    </li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="langguages-list">
-                                    <li>
-                                        <img src="./Media/html.png" alt="html logo">
-                                    </li>
-                                    <li>
-                                        HTML
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="langguages-list">
-                                    <li>
-                                        <img src="./Media/css.png" alt="css logo">
-                                    </li>
-                                    <li>
-                                        CSS
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                      <img src="./Media/html.png" alt="html logo" />
                     </li>
+                    <li>HTML</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="langguages-list">
                     <li>
-                        <ul class="skills">
-                            <li><h4>Frameworks</h4></li>
-                            <li><img src="./Media/Disabled.png" alt="Drop down menu to display Frameworks list"></li>
-                        </ul>
+                      <img src="./Media/css.png" alt="css logo" />
                     </li>
-                    <li><img src="./Media/Separator Bottom.png" alt="Horizontal Line separator"></li>
-                    <li>
-                        <ul class="skills">
-                            <li><h4>Skills</h4></li>
-                            <li><img src="./Media/Disabled.png" alt="Drop down menu to display skills list"></li>
-                        </ul>
-                    </li>
-                    <li><img src="./Media/Separator Bottom.png" alt="Horizontal Line separator"></li>
-                </ul>
-            </div>
-        </section>
-        <section class="contact-section" id="contact-me">
-            <div >
-                <h2 class="contact-me-tittle">
-                    Contact me
-                </h2>
-                <p class="form-instructions">
-                    If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it 
-                </p>
-                <form id="contact-form" action="https://formspree.io/f/mwkajang" method="POST">
-                    <ul>
-                     <li>
-                       <label for="name">Name:</label>
-                       <input type="text" id="name" name="user_name" placeholder="Name" maxlength="30" required>
-                     </li>
-                     <li>
-                       <label for="mail">E-mail:</label>
-                       <input type="email" id="mail" name="user_email" placeholder="Email" required>
-                     </li>
-                     <li>
-                       <label for="msg">Message:</label>
-                       <textarea id="msg" name="user_message" placeholder="Write your message here" maxlength="500" required></textarea>
-                     </li>
-                     <li>
-                         <button class="project-button form-button" type="submit">
-                            Get it Touch
-                         </button>
-                     </li>
-                    </ul>
-                   </form>
-                   <img src="./Media/line-shape.png" alt="line-shape">
-                </div>
-        </section>
+                    <li>CSS</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="skills">
+                <li><h4>Frameworks</h4></li>
+                <li>
+                  <img
+                    src="./Media/Disabled.png"
+                    alt="Drop down menu to display Frameworks list"
+                  />
+                </li>
+              </ul>
+            </li>
+            <li>
+              <img
+                src="./Media/separator-bottom.png"
+                alt="Horizontal Line separator"
+              />
+            </li>
+            <li>
+              <ul class="skills">
+                <li><h4>Skills</h4></li>
+                <li>
+                  <img
+                    src="./Media/Disabled.png"
+                    alt="Drop down menu to display skills list"
+                  />
+                </li>
+              </ul>
+            </li>
+            <li>
+              <img
+                src="./Media/separator-bottom.png"
+                alt="Horizontal Line separator"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contact-section" id="contact-me">
+        <div>
+          <h2 class="contact-me-tittle">Contact me</h2>
+          <p class="form-instructions">
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it
+          </p>
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/mwkajang"
+            method="POST"
+          >
+            <ul>
+              <li>
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="user_name"
+                  placeholder="Name"
+                  maxlength="30"
+                  required
+                />
+              </li>
+              <li>
+                <label for="mail">E-mail:</label>
+                <input
+                  type="email"
+                  id="mail"
+                  name="user_email"
+                  placeholder="Email"
+                  required
+                />
+              </li>
+              <li>
+                <label for="msg">Message:</label>
+                <textarea
+                  id="msg"
+                  name="user_message"
+                  placeholder="Write your message here"
+                  maxlength="500"
+                  required
+                ></textarea>
+              </li>
+              <li>
+                <button class="project-button form-button" type="submit">
+                  Get it Touch
+                </button>
+              </li>
+            </ul>
+          </form>
+          <img src="./Media/line-shape.png" alt="line-shape" />
+        </div>
+      </section>
     </main>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
