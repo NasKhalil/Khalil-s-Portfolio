@@ -1,9 +1,13 @@
 const btnOpen = document.querySelector(".nav-btn");
 const btnClose = document.querySelector(".close-btn");
 const menu = document.querySelector(".nav-items");
+const menuItem = document.querySelectorAll(".menu-item")
 
 btnOpen.addEventListener("click", openMenu);
 btnClose.addEventListener("click", closeMenu);
+menuItem.forEach( (item)=> {
+    item.addEventListener("click", closeMenu)
+})
 
 function openMenu() {
   btnClose.style.display = "block";
