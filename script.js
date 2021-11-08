@@ -17,6 +17,6 @@ function closeMenu() {
 
 btnOpen.addEventListener('click', openMenu);
 btnClose.addEventListener('click', closeMenu);
-menuItem.forEach( (item)=> {
-    item.addEventListener('click', closeMenu)
+menuItem.forEach((item) => {
+  item.addEventListener('click', closeMenu);
 });
