@@ -418,14 +418,12 @@ label {
   .nav-items li {
     list-style: none;
     margin-bottom: 0;
-    /* padding: 0 10px; */
   }
 
   .nav-items a {
     color: #344563;
     text-decoration: none;
     font-size: 15px;
-    /* padding: 0 10px; */
   }
 
   h1 {
