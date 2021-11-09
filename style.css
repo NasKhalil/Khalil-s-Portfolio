@@ -743,7 +743,7 @@ label {
   .popup-window {
     display: none;
     z-index: 1;
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     background-color: rgba(150, 150, 160, 0.7);
@@ -781,6 +781,6 @@ label {
   }
   .close-popup-btn {
     background: none;
-    border:none;
+    border: none;
   }
 }

@@ -2,15 +2,16 @@ const btnOpen = document.querySelector('.nav-btn');
 const btnClose = document.querySelector('.close-btn');
 const menu = document.querySelector('.nav-items');
 const menuItem = document.querySelectorAll('.menu-item');
-const popupOpen = document.querySelectorAll('.project-button');
-const popupWindow = document.querySelector('.popup-window');
-const closePopupBtn = document.querySelector('.close-popup-btn');
-const popupTitle = document.querySelector('.popup-title');
+const mainContainer = document.querySelector('main');
+
+// const popupWindow = document.querySelector('.popup-window');
+// const closePopupBtn = document.querySelector('.close-popup-btn');
+// const popupTitle = document.querySelector('.popup-title');
 const workSection = document.querySelector('#my-project');
 
 const data = [
   {
-    class:'container',
+    class: 'container',
     title: 'Tonic',
     company: 'Canopi',
     role: 'Backend dev',
@@ -23,7 +24,7 @@ const data = [
     tags: ['javascript', 'html', 'css', 'javascript', 'html', 'css'],
   },
   {
-    class:'container-reverse',
+    class: 'container-reverse',
     title: 'Multi-Post Stories',
     company: 'Facebook',
     role: 'Backend dev',
@@ -36,7 +37,7 @@ const data = [
     tags: ['javascript', 'html', 'css', 'javascript', 'html', 'css'],
   },
   {
-    class:'container',
+    class: 'container',
     title: 'Facebook 360',
     company: 'Facebook',
     role: 'Backend dev',
@@ -49,7 +50,7 @@ const data = [
     tags: ['javascript', 'html', 'css', 'javascript', 'html', 'css'],
   },
   {
-    class:'container-reverse',
+    class: 'container-reverse',
     title: 'Uber Navigation',
     company: 'Uber',
     role: 'Backend dev',
@@ -81,19 +82,11 @@ menuItem.forEach((item) => {
   item.addEventListener('click', closeMenu);
 });
 
-function openPopup() {
-  popupWindow.style.display = 'block';
-}
+// function closePopup() {
+//   popupWindow.style.display = 'none';
+// }
 
-function closePopup() {
-  popupWindow.style.display = 'none';
-}
-
-popupOpen.forEach((item) => {
-  item.addEventListener('click', openPopup);
-});
-
-closePopupBtn.addEventListener('click', closePopup);
+// closePopupBtn.addEventListener('click', closePopup);
 
 data.forEach((item) => {
   const card = `
@@ -133,4 +126,65 @@ data.forEach((item) => {
 </div>
 `;
   workSection.insertAdjacentHTML('afterbegin', card);
+
+  const popup = `
+<section class="popup-window">
+<div class="popup-container">
+  <div class="popup-header">
+    <div>
+      <h2 class="popup-title project-title">${item.title}</h2>
+      <div class="frame">
+        <h3 class="client">${item.company}</h3>
+        <img
+          class="counter"
+          src="./Media/Counter.png"
+          alt="point image"
+        />
+        <h3 class="role">${item.role}</h3>
+        <img
+          class="counter"
+          src="./Media/Counter.png"
+          alt="point image"
+        />
+        <h3 class="year">${item.year}</h3>
+      </div>
+    </div>
+    <button class="close-popup-btn" type="button">
+      <img src="./Media/close-popup-btn.png" alt="close button" />
+    </button>
+  </div>
+  <img src=".${item.img}" alt="screenshot" class="popup-img" />
+  <div class="popup-main">
+    <p>${item.descriptionPopup}</p>
+    <div class="popup-tech">
+      <ul class="tags">
+        <li class="tag-1 tag-style"></li>
+        <li class="tag-2 tag-style"></li>
+        <li class="tag-3 tag-style"></li>
+        <li class="tag-4 tag-style"></li>
+        <li class="tag-5 tag-style"></li>
+        <li class="tag-6 tag-style"></li>
+      </ul>
+      <div class="popup-buttons">
+        <button class="project-button" type="button">See live</button>
+        <button class="project-button" type="button">See source</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+`;
+  mainContainer.insertAdjacentHTML('beforeend', popup);
+
+  const popupWindow = document.querySelector('.popup-window');
+  const closePopupBtn = document.querySelector('.close-popup-btn');
+  const popupBtn = document.querySelectorAll('.project-button');
+  popupBtn.forEach((item) => {
+    item.addEventListener('click', () => {
+      popupWindow.style.display = 'block';
+    });
+  });
+  closePopupBtn.addEventListener('click', () => {
+    popupWindow.style.display = 'none';
+  });
 });
