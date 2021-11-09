@@ -1,10 +1,10 @@
 /* stylesheet */
 
 /* base code */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
 }
 
@@ -163,11 +163,11 @@ h1:nth-child(odd) {
   grid-template-rows: repeat(4, 597px);
   grid-auto-columns: 1fr;
   grid-template-areas:
-    "container"
-    "container"
-    "container"
-    "container"
-    "container";
+    'container'
+    'container'
+    'container'
+    'container'
+    'container';
 }
 
 .container,
@@ -464,11 +464,11 @@ label {
     grid-auto-columns: auto;
     gap: 71px 0;
     grid-template-areas:
-      "container"
-      "container"
-      "container"
-      "container"
-      "container";
+      'container'
+      'container'
+      'container'
+      'container'
+      'container';
   }
 
   .container {
@@ -749,7 +749,13 @@ label {
     background-color: rgba(150, 150, 160, 0.7);
     backdrop-filter: blur(5px);
   }
-  
+
+  .popup-img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+  }
+
   .popup-header {
     display: flex;
     justify-content: space-between;
@@ -758,5 +764,19 @@ label {
 
   .popup-main {
     display: flex;
+  }
+
+  .popup-main p {
+    width: 70%;
+  }
+
+  .popup-tech {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popup-tech .tag-style {
+    margin-bottom: 12px;
   }
 }
