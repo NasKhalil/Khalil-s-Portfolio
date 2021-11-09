@@ -476,7 +476,7 @@ label {
     display: flex;
     flex-direction: row;
     border-radius: 24px;
-    padding: 20px;
+    padding: 48px 20px 20px 20px;
   }
 
   .container-reverse {
@@ -512,7 +512,6 @@ label {
     font-weight: 900;
     font-size: 32px;
     line-height: 44px;
-    margin-top: 48px;
   }
 
   .frame {
@@ -742,6 +741,7 @@ label {
     padding: 24px;
   }
   .popup-window {
+    display: none;
     z-index: 1;
     position: absolute;
     width: 100%;
@@ -778,5 +778,9 @@ label {
 
   .popup-tech .tag-style {
     margin-bottom: 12px;
+  }
+  .close-popup-btn {
+    background: none;
+    border:none;
   }
 }
