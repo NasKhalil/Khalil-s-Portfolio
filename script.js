@@ -10,6 +10,7 @@ const workSection = document.querySelector('#my-project');
 
 const data = [
   {
+    class:'container',
     title: 'Tonic',
     company: 'Canopi',
     role: 'Backend dev',
@@ -22,6 +23,7 @@ const data = [
     tags: ['javascript', 'html', 'css', 'javascript', 'html', 'css'],
   },
   {
+    class:'container-reverse',
     title: 'Multi-Post Stories',
     company: 'Facebook',
     role: 'Backend dev',
@@ -34,6 +36,7 @@ const data = [
     tags: ['javascript', 'html', 'css', 'javascript', 'html', 'css'],
   },
   {
+    class:'container',
     title: 'Facebook 360',
     company: 'Facebook',
     role: 'Backend dev',
@@ -46,6 +49,7 @@ const data = [
     tags: ['javascript', 'html', 'css', 'javascript', 'html', 'css'],
   },
   {
+    class:'container-reverse',
     title: 'Uber Navigation',
     company: 'Uber',
     role: 'Backend dev',
@@ -58,46 +62,6 @@ const data = [
     tags: ['javascript', 'html', 'css', 'javascript', 'html', 'css'],
   },
 ];
-
-data.forEach((item) => {
-  const card = `
-<div class="container-reverse">
-<img
-  class="snapshoot-img"
-  src=".${item.img}"
-  alt="Screenshot of the Multi-Post Stories project"
-/>
-<div class="container-description">
-  <h2 class="project-title">${item.title}</h2>
-  <div class="frame">
-    <h3 class="client">${item.company}</h3>
-    <img
-      class="counter"
-      src="./Media/Counter.png"
-      alt="point image"
-    />
-    <h3 class="role">${item.role}</h3>
-    <img
-      class="counter1"
-      src="./Media/Counter.png"
-      alt="point image"
-    />
-    <h3 class="year">${item.year}</h3>
-  </div>
-  <p class="description">
-   ${item.description}
-  </p>
-  <ul class="tags">
-    <li class="tag-1 tag-style"></li>
-    <li class="tag-2 tag-style"></li>
-    <li class="tag-3 tag-style"></li>
-  </ul>
-  <button class="project-button" type="button">See Project</button>
-</div>
-</div>
-`;
-  workSection.insertAdjacentHTML('afterbegin', card);
-});
 
 function openMenu() {
   btnClose.style.display = 'block';
@@ -130,3 +94,43 @@ popupOpen.forEach((item) => {
 });
 
 closePopupBtn.addEventListener('click', closePopup);
+
+data.forEach((item) => {
+  const card = `
+<div class=${item.class}>
+<img
+  class="snapshoot-img"
+  src=".${item.img}"
+  alt="Screenshot of the Multi-Post Stories project"
+/>
+<div class="container-description">
+  <h2 class="project-title">${item.title}</h2>
+  <div class="frame">
+    <h3 class="client">${item.company}</h3>
+    <img
+      class="counter"
+      src="./Media/Counter.png"
+      alt="point image"
+    />
+    <h3 class="role">${item.role}</h3>
+    <img
+      class="counter1"
+      src="./Media/Counter.png"
+      alt="point image"
+    />
+    <h3 class="year">${item.year}</h3>
+  </div>
+  <p class="description">
+   ${item.description}
+  </p>
+  <ul class="tags">
+    <li class="tag-1 tag-style">${item.tags[0]}</li>
+    <li class="tag-2 tag-style">${item.tags[1]}</li>
+    <li class="tag-3 tag-style">${item.tags[2]}</li>
+  </ul>
+  <button class="project-button" type="button">See Project</button>
+</div>
+</div>
+`;
+  workSection.insertAdjacentHTML('afterbegin', card);
+});
