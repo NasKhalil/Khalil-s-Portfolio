@@ -743,7 +743,7 @@ label {
   .popup-window {
     display: none;
     z-index: 1;
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     background-color: rgba(150, 150, 160, 0.7);
