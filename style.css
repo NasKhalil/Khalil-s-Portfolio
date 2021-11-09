@@ -735,4 +735,28 @@ label {
   }
 
   /* contact me section end */
+  .popup-container {
+    background: #fff;
+    border-radius: 16px;
+    margin: 77px 142px;
+    padding: 24px;
+  }
+  .popup-window {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-color: rgba(150, 150, 160, 0.7);
+    backdrop-filter: blur(5px);
+  }
+  
+  .popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .popup-main {
+    display: flex;
+  }
 }

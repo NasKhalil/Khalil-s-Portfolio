@@ -3,6 +3,18 @@ const btnClose = document.querySelector('.close-btn');
 const menu = document.querySelector('.nav-items');
 const menuItem = document.querySelectorAll('.menu-item');
 
+const data = [
+  {
+    title: 'Tonic',
+    company: 'Canopi',
+    role: 'Backend dev',
+    year: 2015,
+    img: '',
+    description:'',
+    tags: ['javascript', 'html', 'css']
+  }
+]
+
 function openMenu() {
   btnClose.style.display = 'block';
   btnOpen.style.display = 'none';
