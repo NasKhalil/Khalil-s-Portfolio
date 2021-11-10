@@ -12,7 +12,8 @@ body {
   background-color: #e5e5e5;
 }
 
-.project-button, .form-button {
+.project-button,
+.form-button {
   width: auto;
   height: 48px;
   background: #fff;
@@ -28,7 +29,8 @@ body {
   transition: background-color 0.4s;
 }
 
-.project-button:hover, .form-button:hover {
+.project-button:hover,
+.form-button:hover {
   width: auto;
   height: 48px;
   background: #6070ff;
@@ -42,7 +44,8 @@ body {
   letter-spacing: 0.03em;
 }
 
-.project-button:active, .form-button:active {
+.project-button:active,
+.form-button:active {
   width: auto;
   height: 48px;
   background: #2230d2;
@@ -54,7 +57,7 @@ body {
   font-size: 15px;
   line-height: 24px;
   letter-spacing: 0.03em;
-} 
+}
 
 .social-connect {
   text-decoration: none;
@@ -434,6 +437,11 @@ label {
   display: flex;
   width: 270px;
   justify-content: space-around;
+}
+
+.error-message {
+  display: none;
+  color: red !important;
 }
 
 /* Mobile version ends */
