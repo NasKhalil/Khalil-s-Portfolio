@@ -155,8 +155,8 @@ function openModal(id) {
     const tagItems = `
     <li class="tag-1 tag-style">${el}</li>
     `;
-    modaltag.insertAdjacentHTML('beforeend', tagItems)
-  })
+    return modaltag.insertAdjacentHTML('beforeend', tagItems);
+  });
 }
 
 openModalBtn.forEach((item) => {
