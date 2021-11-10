@@ -14,12 +14,7 @@ const modalRole = document.querySelector('.role');
 const modalYear = document.querySelector('.year');
 const modalDescription = document.querySelector('.description');
 const modalClose = document.querySelector('.close-popup-btn');
-const modaltag1 = document.querySelector('.tag-1');
-const modaltag2 = document.querySelector('.tag-2');
-const modaltag3 = document.querySelector('.tag-3');
-const modaltag4 = document.querySelector('.tag-4');
-const modaltag5 = document.querySelector('.tag-5');
-const modaltag6 = document.querySelector('.tag-6');
+const modaltag = document.querySelector('.popup-tags');
 let openModalBtn;
 
 function openMenu() {
@@ -156,12 +151,12 @@ function openModal(id) {
   modalRole.textContent = item.role;
   modalYear.textContent = item.year;
   modalDescription.textContent = item.descriptionPopup;
-  modaltag1.textContent = item.tags[0];
-  modaltag2.textContent = item.tags[1];
-  modaltag3.textContent = item.tags[2];
-  modaltag4.textContent = item.tags[3];
-  modaltag5.textContent = item.tags[4];
-  modaltag6.textContent = item.tags[5];
+  data[0].tags.map((el) => {
+    const tagItems = `
+    <li class="tag-1 tag-style">${el}</li>
+    `;
+    modaltag.insertAdjacentHTML('beforeend', tagItems)
+  })
 }
 
 openModalBtn.forEach((item) => {

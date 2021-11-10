@@ -806,6 +806,7 @@ label {
   }
 
   /* contact me section end */
+
   /* popup sectio */
 
   .popup-container {
@@ -865,7 +866,7 @@ label {
   .popup-tech .tag-style {
     margin-bottom: 12px;
   }
-  
+
   .close-popup-btn {
     background: none;
     border: none;
