@@ -1,4 +1,5 @@
-const emailValidationRegex = /^[a-z]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+function main () {
+  const emailValidationRegex = /^[a-z]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
 const email = document.getElementById('mail');
 const submitForm = document.querySelector('#contact-form');
 const errorMessage = document.querySelector('.error-message');
@@ -24,3 +25,6 @@ submitForm.addEventListener('submit', (e) => {
     errorMessage.textContent = 'Please enter a valid email';
   }
 });
+}
+
+window.onload = main;
