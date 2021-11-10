@@ -13,7 +13,7 @@ function checkEmail(emailInput) {
   return true;
 }
 
-submitForm.addEventListener('submit', function (e) {
+submitForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const emailValue = email.value;
   if (checkEmail(emailValue)) {
