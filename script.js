@@ -50,7 +50,6 @@ const data = [
     tags: ['javascript', 'html', 'css', 'javascript', 'html', 'css'],
   },
   {
-    id:3,
     class: 'container-reverse',
     title: 'Uber Navigation',
     company: 'Uber',
