@@ -441,15 +441,15 @@ label {
 
 .error-message {
   display: none;
-  color: #D8000C !important;
-	background-color: #FFBABA;
-	background-image: url('./Media/error.png');
+  color: #d8000c !important;
+  background-color: #ffbaba;
+  background-image: url('./Media/error.png');
   background-repeat: no-repeat;
-	background-position: 10px center;
+  background-position: 10px center;
   border: orangered 1px solid;
   border-radius: 8px;
   padding: 15px 10px 15px 50px;
-  margin: 10px 0px;
+  margin: 10px 0;
   font-weight: 200;
 }
 
