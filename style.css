@@ -364,6 +364,76 @@ label {
   align-self: flex-start;
 }
 
+/* popup section for mobile version */
+
+.popup-container {
+  background: #fff;
+  border-radius: 16px;
+  margin: 60px 16px;
+  padding: 24px;
+  height: auto;
+}
+.popup-window {
+  display: none;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(150, 150, 160, 0.7);
+  backdrop-filter: blur(5px);
+  overflow-y: auto;
+}
+
+.popup-img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  margin-top: 12px;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-main p {
+  width: 100%;
+}
+
+.popup-tags{
+  display: flex;
+  width: 200px;
+  flex-wrap: wrap;
+}
+
+.popup-tech {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-tech .tag-style {
+  margin-bottom: 12px;
+}
+.close-popup-btn {
+  background: none;
+  border: none;
+}
+
+.popup-buttons {
+  display: flex;
+  width: 270px;
+  justify-content: space-around;
+}
+
 /* Mobile version ends */
 
 /* desktop version start */
@@ -734,6 +804,7 @@ label {
   }
 
   /* contact me section end */
+  /* popup sectio */
   .popup-container {
     background: #fff;
     border-radius: 16px;
@@ -768,6 +839,7 @@ label {
 
   .popup-main {
     display: flex;
+    flex-direction: row;
   }
 
   .popup-main p {
@@ -778,6 +850,12 @@ label {
     width: 30%;
     display: flex;
     flex-direction: column;
+  }
+
+  .popup-tags{
+    display: flex;
+    max-width: 300px;
+    flex-wrap: wrap;
   }
 
   .popup-tech .tag-style {
