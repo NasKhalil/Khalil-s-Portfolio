@@ -373,6 +373,7 @@ label {
   padding: 24px;
   height: auto;
 }
+
 .popup-window {
   display: none;
   z-index: 1;
@@ -408,7 +409,7 @@ label {
   width: 100%;
 }
 
-.popup-tags{
+.popup-tags {
   display: flex;
   width: 200px;
   flex-wrap: wrap;
@@ -423,6 +424,7 @@ label {
 .popup-tech .tag-style {
   margin-bottom: 12px;
 }
+
 .close-popup-btn {
   background: none;
   border: none;
@@ -805,6 +807,7 @@ label {
 
   /* contact me section end */
   /* popup sectio */
+
   .popup-container {
     background: #fff;
     border-radius: 16px;
@@ -812,6 +815,7 @@ label {
     padding: 24px;
     height: auto;
   }
+
   .popup-window {
     display: none;
     z-index: 1;
@@ -852,7 +856,7 @@ label {
     flex-direction: column;
   }
 
-  .popup-tags{
+  .popup-tags {
     display: flex;
     max-width: 300px;
     flex-wrap: wrap;
@@ -861,6 +865,7 @@ label {
   .popup-tech .tag-style {
     margin-bottom: 12px;
   }
+  
   .close-popup-btn {
     background: none;
     border: none;
