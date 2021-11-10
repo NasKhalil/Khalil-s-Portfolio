@@ -1,15 +1,13 @@
-var emailValidationRegex = /^[a-z]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-var email = document.getElementById('mail');
-var submitForm = document.querySelector('#contact-form');
-var errorMessage = document.querySelector('.error-message');
+const emailValidationRegex = /^[a-z]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+const email = document.getElementById('mail');
+const submitForm = document.querySelector('#contact-form');
+const errorMessage = document.querySelector('.error-message');
 
 function checkEmail(emailInput) {
   if (emailInput.trim() === '') {
-    // alert('please enter your email');
     return false;
   }
   if (!emailValidationRegex.test(emailInput)) {
-    // alert('please use only lowercase');
     return false;
   }
   return true;
