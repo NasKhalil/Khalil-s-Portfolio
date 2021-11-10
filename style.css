@@ -12,7 +12,8 @@ body {
   background-color: #e5e5e5;
 }
 
-.project-button {
+.project-button,
+.form-button {
   width: auto;
   height: 48px;
   background: #fff;
@@ -28,7 +29,8 @@ body {
   transition: background-color 0.4s;
 }
 
-.project-button:hover {
+.project-button:hover,
+.form-button:hover {
   width: auto;
   height: 48px;
   background: #6070ff;
@@ -42,7 +44,8 @@ body {
   letter-spacing: 0.03em;
 }
 
-.project-button:active {
+.project-button:active,
+.form-button:active {
   width: auto;
   height: 48px;
   background: #2230d2;
@@ -436,6 +439,20 @@ label {
   justify-content: space-around;
 }
 
+.error-message {
+  display: none;
+  color: #d8000c !important;
+  background-color: #ffbaba;
+  background-image: url('./Media/error.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  border: orangered 1px solid;
+  border-radius: 8px;
+  padding: 15px 10px 15px 50px;
+  margin: 10px 0;
+  font-weight: 200;
+}
+
 /* Mobile version ends */
 
 /* desktop version start */
@@ -719,7 +736,7 @@ label {
 
   /* contact me section */
   .contact-section div {
-    height: 779px;
+    height: 835px;
     background-color: #6070ff;
     background-image: url(./Media/contact-form-background-desktop.png);
     background-size: contain;
