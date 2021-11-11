@@ -22,7 +22,7 @@ function saveData() {
   inputData.name = inputName.value;
   inputData.email = inputEmail.value;
   inputData.text = inputText.value;
-  inputDataStr = JSON.stringify(inputData);
+  const inputDataStr = JSON.stringify(inputData);
   localStorage.inputData = inputDataStr;
 }
 
