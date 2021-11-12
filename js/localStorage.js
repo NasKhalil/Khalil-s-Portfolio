@@ -1,6 +1,6 @@
-const inputName = document.querySelector('#name');
-const inputEmail = document.querySelector('#mail');
-const inputText = document.querySelector('#msg');
+const inputName = document.querySelector('.name');
+const inputEmail = document.querySelector('.mail');
+const inputText = document.querySelector('.msg');
 
 const inputData = {
   name: '',
@@ -12,7 +12,7 @@ function loadData() {
   if (!localStorage.inputData) {
     return;
   }
-  const loadedData = JSON.parse(localStorage.inputData);
+  const loadedData = localStorage.inputData;
   inputName.value = loadedData.name;
   inputEmail.value = loadedData.email;
   inputText.value = loadedData.text;
