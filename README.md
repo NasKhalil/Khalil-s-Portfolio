@@ -23,10 +23,10 @@ To get a local copy up and running follow these simple example steps.
 
 
 ### Prerequisites
--Html
--CSS
--Git
--Github
+- HTML
+- CSS
+- Git
+- Github
 
 ### Setup
 -None
